@@ -1,0 +1,29 @@
+// make virtual env
+python -m venv my-env
+
+// active my virtual env
+source my-env/bin/activate
+
+// install Django
+python -m pip install django
+
+// start project
+django-admin startproject SofyProject
+
+// start app
+python manage.py startapp myShop
+
+// install Pillow
+python -m pip install Pillow
+
+// create super user
+python manage.py createsuperuser
+
+// make migrations
+python manage.py makemigrations
+
+// migrate
+python manage.py migrate
+
+// run server
+python manage.py runserver
